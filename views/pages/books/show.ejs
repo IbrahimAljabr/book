@@ -11,14 +11,18 @@
                         <!-- <div class="pr"> -->
                         <p id="para">
                             <%= book.description %>
+                            
                         </p>
                         </div>
-                        <div>
+   
+                        <div class="disc">
                             <div>
-                                <button type="submit">Update Details</button>
+                                <a onclick="update()"> <button type="submit">Update Details</button></a>
                             </div>
                             <div>
-                                <button type="submit">Delete Book</button>
+                                <form action="/books/<%= book.id %>?_method=DELETE" method="POST">
+                                    <button type="submit">Delete Book</button>
+                                </form>
                             </div>
                         </div>
                         <div> <a class="a-btn" href="/">Home</a></div>

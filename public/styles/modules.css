@@ -21,12 +21,6 @@ img{
     margin: 1%;
     overflow: scroll;
   }
-  section:hover {
-  
-    border: rgba(109, 105, 105, 0.692) 2px solid;
-  
-  }
-
   
 input[type=submit]{
     width: 90%;

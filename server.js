@@ -24,6 +24,7 @@ const client = new pg.Client(process.env.DATABASE_URL);
 // const client = new pg.Client({ connectionString: process.env.DATABASE_URL, ssl: { rejectUnauthorized: false } });
 
 // routes
+
 // app.get('/hello', (req, res) => {
 //   res.render('pages/index');
 // })
@@ -42,6 +43,8 @@ app.get('/books/:id', viewDetails);
 app.post('/books', storeToDB);
 
 app.put("/books/:id", editBook);
+
+app.delete('/book/:id',deleteBook)
 
 
 
@@ -68,6 +71,23 @@ function editBook(req, res) {
       console.log(`Error while updating the data, ${error}`);
     })
 }
+
+function deleteBook(req,res) {
+  
+  let id =req.params.id;
+
+  let query =`DELETE FROM book WHERE id=$1;`;
+  let safeValue = [id];
+  
+  client.query(query,safeValue).then(()=>{
+
+    console.log('deleted ..');
+    res.redirect('/')
+  }).catch(error =>{
+    console.log('error While deleting ..',error);
+  })
+}
+
 
 function checkDB(req, res) {
 
