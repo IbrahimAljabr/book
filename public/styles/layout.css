@@ -47,8 +47,10 @@ footer h3{
   width: 18px;
 
 }
+#update{
+  display: none;
+}
 #update div{
-  /* display: none; */
 
   display: grid;
   grid-template-columns: 1fr 1fr;
