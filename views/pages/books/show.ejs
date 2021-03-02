@@ -16,14 +16,14 @@
                         </div>
    
                         <div class="disc">
-                            <div>
-                                <a onclick="update()"> <button type="submit">Update Details</button></a>
-                            </div>
-                            <div>
+                                <div>
+                                    <a onclick="update()"> <button type="submit">Update Details</button></a>
+                                </div>
+                                <div>
                                 <form action="/books/<%= book.id %>?_method=DELETE" method="POST">
                                     <button type="submit">Delete Book</button>
                                 </form>
-                            </div>
+                                </div>
                         </div>
                         <div> <a class="a-btn" href="/">Home</a></div>
                 </section>
