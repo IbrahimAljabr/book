@@ -1,13 +1,20 @@
-<section id="update">
+<div id="update" class="updated">
+<section >
   <form action="/books/<%= book.id %>?_method=PUT" method="POST">
     <input type="text" name="img" value="<%=book.image_url%>">
     <input type="text" name="title" name="searchBy" value="<%=book.title%>">
     <input type="text" name="author" value="<%=book.author%>">
-    <input type="text" name="description" value="<%=book.description%>">
-    <div>
-      <button type="submit">Update Book</button>
-      <button>Cancel</button>
-    </div>
+    <textarea  type="text" name="description" value="<%=book.description%>"> <%=book.description%> </textarea>
+   
+    
+      <div class="up">
+        <a ><button type="submit">Update Book</button></a>
+  
+        <a ><button>Cancel</button></a>
+      </div>
+    
+    
     
   </form>
 </section>
+</div>

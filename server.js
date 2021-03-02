@@ -44,7 +44,7 @@ app.post('/books', storeToDB);
 
 app.put("/books/:id", editBook);
 
-app.delete('/book/:id',deleteBook)
+app.delete('/books/:id',deleteBook)
 
 
 

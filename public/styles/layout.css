@@ -9,8 +9,8 @@
 }
 section{
   background-color: #f8f8f8;
-  margin: 8%;
-  padding: 4%;
+  margin: 20px;
+  padding: 25px;
   text-align: center;
   border: solid #eeeeee 2px;
   border-radius: 5px;
@@ -47,13 +47,31 @@ footer h3{
   width: 18px;
 
 }
-#update div{
-  /* display: none; */
+#update{
+  
+}
+.updated{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.644);
+  position: fixed;
+  display: none;
+  top:0;
+}
+#update section{
+
+  margin-top: 150px;
+
+}
+
+#update section div{
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+ 
 }
-#update div input:hover{
+
+#update section div input:hover{
   border: #121212 solid 1px;
   background-color: #eeeeee;
   color: #121212;
@@ -99,4 +117,11 @@ footer h3{
     display: inline;
   }
 
+  #update section{
+
+    position: relative;
+    left:  33%;
+    width: 20%;
+  
+  }
 }

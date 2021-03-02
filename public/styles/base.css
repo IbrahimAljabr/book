@@ -62,6 +62,22 @@ nav div:hover{
 body{
   background-color: rgb(217, 223, 230);
 }
+textarea{
+
+  width: 89%;
+  height: 160px;
+  border-radius: 5px;
+  border-color: rgb(165, 98, 98);
+  margin: 20px 0 20px 0;
+  font-size: 16px;
+
+}
+.btn button:hover{
+
+  border-color: #121212;
+  color: #121212;
+  background-color: #eeeeee;
+}
 
 @media  (min-width: 600px){
   
@@ -81,10 +97,11 @@ body{
     width: 25%;
 
   }
-  input[type=text]{
+  input[type=text],textarea{
     width: 90%;
 
   }
+  
   
  
 
